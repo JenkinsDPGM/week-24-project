@@ -1,5 +1,5 @@
 pipeline {
-    agent slave1
+    agent {slave1}
 
     parameters {
         string(name: 'environment', defaultValue: 'terraform', description: 'Workspace/environment file to use for deployment')
