@@ -24,6 +24,7 @@ pipeline {
                               branch: "master",
                               changelog: true,
                               credentialsId: "Github Key 2"
+                            )
                         }
                     }
                 }
