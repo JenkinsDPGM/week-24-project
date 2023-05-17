@@ -19,7 +19,11 @@ pipeline {
                  script{
                         dir("terraform")
                         {
-                            git "https://github.com/JenkinsDPGM/week-24-project.git"
+                            git(
+                              url: "https://github.com/JenkinsDPGM/week-24-project.git",
+                              branch: "master",
+                              changelog: true,
+                              credentialsId: "Github Key 2"
                         }
                     }
                 }
